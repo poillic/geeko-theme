@@ -29,8 +29,6 @@
 
 {block name='content_wrapper'}
   <div id="content-wrapper">
-  	<a href="#" class="gk__a-btn--yellow">En savoir plus</a>
-  	<a href="#" class="gk__a-btn--black">En savoir plus</a>
     {hook h="displayContentWrapperTop"}
     {block name='content'}
       <p>Hello world! This is HTML5 Boilerplate.</p>

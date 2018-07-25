@@ -23,28 +23,17 @@
  * International Registered Trademark & Property of PrestaShop SA
  *}
 
-{block name='header_logo'}
-  <a class="logo" href="{$urls.base_url}" title="{$shop.name}">
-    <img src="{$shop.logo}" alt="{$shop.name}">
-  </a>
+
+{block name='header_banner'}
+  <div class="header-banner">
+    {hook h='displayBanner'}
+  </div>
 {/block}
-<ul class="box row">
-  <li><a href="#">Produits</a></li>
-  <li><a href="#">Notre Histoire</a></li>
-  <li><a href="#">Livraison & Retours</a></li>
-  <li><a href="#">Vos créations</a></li>
-</ul>
 
-<div class="end-xs">
-
-<div class="select-wrapper"> 
-  <select id="monselect">
-    <option value="valeur1">Valeur 1</option> 
-    <option value="valeur2" selected>Valeur 2</option>
-    <option value="valeur3">Valeur 3</option>
-  </select>
-</div>
-
-  <input type="text" placeholder="Name">
-  {hook h='displayNav'}
-</div>
+{block name='header_nav'}
+  <div class="header-nav">
+    <img src="{$shop.logo}" alt="{$shop.name}">
+    <a class="fa-fw select-all fas"></a>
+    {hook h='displayNav'}
+  </div>
+{/block}

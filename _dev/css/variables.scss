@@ -1,0 +1,33 @@
+$body-background-color: #fefefe;
+$mercury: #e3e3e3;
+$sweetcorn: #f7ec8d;
+$linen: #fbebeb;
+$scooter: #2ebfcd;
+$black: #000000;
+$white: #FFFFFF;
+$abbey: #4a4a4c;
+
+@font-face{
+	font-family: "Avenir Black";
+	src: url("/fonts/avenir-black-webfont.eot"),
+		url("/fonts/avenir-black-webfont.svg"),
+		url("/fonts/avenir-black-webfont.orf"),
+		url("/fonts/avenir-black-webfont.svg"),
+		url("/fonts/avenir-black-webfont.woff")
+}
+
+
+@font-face{
+	font-family: "Avenir Roman";
+	src: url("/fonts/avenir-roman-webfont.eot"),
+		url("/fonts/avenir-roman-webfont.svg"),
+		url("/fonts/avenir-roman-webfont.orf"),
+		url("/fonts/avenir-roman-webfont.svg"),
+		url("/fonts/avenir-roman-webfont.woff")
+}
+
+.gk{
+	&_header{
+		/**/
+	}
+}

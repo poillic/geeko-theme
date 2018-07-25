@@ -37,7 +37,7 @@
       {hook h='displayAfterBodyOpeningTag'}
     {/block}
 
-    <header id="header" class="row between-xs">
+    <header id="header">
       {block name='header'}
         {include file='_partials/header.tpl'}
       {/block}
@@ -76,7 +76,6 @@
 
       {block name='content_wrapper'}
         <div id="content-wrapper" class="left-column right-column">
-          
           {hook h="displayContentWrapperTop"}
           {block name='content'}
             <p>Hello world! This is HTML5 Boilerplate.</p>

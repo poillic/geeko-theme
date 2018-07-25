@@ -41,6 +41,7 @@
   {/if}
 {/block}
 
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 {block name='head_hreflang'}
   {assign "alternative_langs" $urls.alternative_langs|default:[]}
   {foreach from=$alternative_langs item=pageUrl key=code}

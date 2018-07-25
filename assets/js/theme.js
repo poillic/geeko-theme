@@ -46,8 +46,7 @@
 
 	__webpack_require__(1);
 	__webpack_require__(2);
-	__webpack_require__(6);
-	module.exports = __webpack_require__(8);
+	module.exports = __webpack_require__(6);
 
 
 /***/ }),
@@ -69,13 +68,6 @@
 /* 4 */,
 /* 5 */,
 /* 6 */
-/***/ (function(module, exports) {
-
-	// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 7 */,
-/* 8 */
 /***/ (function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
