@@ -1,2 +1,169 @@
+@import "reset";
 @import "variables";
 @import "mixins";
+@import "toggle-btn";
+
+a{
+	text-decoration: none;
+}
+
+
+.gk{ /* gk as geeko */
+	color: $black;
+
+	&__hdr{ /* hdr as headr */
+		&.is--open{
+			& .gk__hdr__nav__ctnr{
+				height: auto;
+			}
+
+			& .gk__hdr__hmb{
+				&:before{
+					content: "\f00d";
+				}	
+			}
+
+			& .gk__hdr__nav__ctnr{
+				padding-bottom: 30px;
+			}
+		}
+
+		&__hmb{
+			font-family: "Font Awesome 5 Free";
+			font-weight: 900;
+			&:before{
+				content: "\f0c9";
+			}
+		}
+
+		&__shp-b{ /* shp-b as shooping bag */
+			position: relative;
+			margin-right: 10px;
+
+			& span{
+				position: absolute;
+				background: $scooter;
+				color: $white;
+				top: 0;
+				right: -10px;
+				width: 20px;
+				height: 20px;
+				text-align:center;
+				line-height: 20px;
+				border-radius: 15px;
+				font-size: 14px;
+			}
+		}
+
+		&__t{ /* t as top */
+			font-size: 30px;
+			padding: 15px;
+			display: flex;
+			justify-content: space-between;
+
+			& img{
+				width: 120px;
+			}
+
+			& a {
+				color: $black;
+			}
+		}
+
+		&__nav{ /* nav as navigation */
+
+			background: $white;
+			border-bottom: 1px solid $mercury;
+
+			&__ctnr{ /* ctnt as container */
+				height: 0;
+				overflow: hidden;
+			}
+
+			&__p{ /* p as page */
+				text-align: center;
+			}
+
+			&__sn{ /* sn as social network */
+				text-align: center;
+				display: flex;
+				justify-content: center;
+				color: black;
+				
+				& li:not(:last-of-type){
+					margin-right: 15px;
+				}
+			}
+		}
+	}
+}
+
+.gk{ /* gk as geeko */
+	&__pnl{ /* pnl as panel */
+		&--sc{ /* sc as sweetcorn */
+			padding: 30px 0;
+			background-color: $sweetcorn;
+		}
+
+		&--wh{
+			background-color: $white;
+		}
+	}
+}
+
+.gk{ /* gk as geeko */
+	&__n-l{ /* n-l as nav link */
+		padding: 15px 0;
+		display: block;
+
+		&.is--active{
+			position: relative;
+
+			&:after{
+				content: '';
+				position: absolute;
+				bottom: 0;
+				display: block;
+				width: 100%;
+				height: 4px;
+				color: $mercury;
+			}
+		}
+
+		&:visited, &:link{
+			color: black;
+		}
+
+		&:active, &:focused{
+
+		}
+
+		 &:hover{
+
+		 }
+	}
+
+	&__h1{
+		text-transform: uppercase;
+	}
+
+	&__h3{
+		text-transform: uppercase;
+	}
+
+	&__btn{
+		&--black{
+			color: $white;
+			background-color: $black;
+			border-radius: 30px;
+			padding: 10px 15px;
+			text-transform: uppercase;
+
+			&:after{
+				font-family: "Font Awesome 5 Free";
+				font-weight: 900;
+				content: "\f054";
+			}
+		}
+	}
+}

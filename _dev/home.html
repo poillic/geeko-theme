@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="../assets/css/theme.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+</head>
+<body>
+	<header class="gk__hdr is--open" data-menu>
+		<div class="gk__hdr__t">
+			<a href="" class="gk__hdr__hmb" data-menu-toggle></a>
+			<img src="logo.svg" class="" >
+			<a href="" class="gk__hdr__shp-b" ><i class="fas fa-shopping-bag"></i><span>2</span></a>
+		</div>
+		<nav class="gk__hdr__nav" >
+			<div class="gk__hdr__nav__ctnr" >
+				<ul class="gk__hdr__nav__p" >
+					<li><a class="gk__n-l is--active" href="#home">Home</a></li>
+					<li><a class="gk__n-l" href="#home">Produits</a></li>
+					<li><a class="gk__n-l" href="#home">Notre histoire</a></li>
+					<li><a class="gk__n-l" href="#home">Livraisons & Retours</a></li>
+					<li><a class="gk__n-l" href="#home">Vos créations</a></li>
+					<li><a class="gk__n-l" href="#home">Mon Compte</a></li>
+				</ul>
+				<ul class="gk__hdr__nav__sn">
+					<li><a class="gk__n-l" href=""><i class="fab fa-twitter"></i></a></li>
+					<li><a class="gk__n-l" href=""><i class="fab fa-facebook"></i></a></li>
+					<li><a class="gk__n-l" href=""><i class="fab fa-instagram"></i></a></li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+
+	<main>
+		<section class="gk__pnl--sc">
+			<h1 class="gk__h1">Le meuble optimal pour les gamers</h1>
+			<h3 class="gk__h3">fabriqué en france</h3>
+			<a href="" class="gk__btn--black">acheter</a>
+		</section>
+		<section class="gk__pnl--wh">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent finibus dolor in pretium molestie. Integer sed convallis ex, a semper mauris.</p>
+
+			<div class="gk__tgl">
+				<span class="gk__tgl__btn"></span>
+				<span class="gk__tgl__name">L'intemporel</span>
+				<span class="gk__tgl__name">L'industriel</span>
+			</div>
+		</section>
+	</main>
+
+	<script type="text/javascript">
+		
+
+		function classToggler( buttonSelector, targetSelector, className ){
+			let button = document.querySelector( buttonSelector );
+
+			let target = document.querySelector( targetSelector );
+
+			button.addEventListener('click', function(e){
+				e.preventDefault();
+				target.classList.toggle( className );
+			});
+		}
+		classToggler('[data-menu-toggle]', '[data-menu]', 'is--open');
+
+	</script>
+</body>
+</html>

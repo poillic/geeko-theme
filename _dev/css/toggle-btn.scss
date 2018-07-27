@@ -1,0 +1,18 @@
+.gk{ /* gk as geeko */
+	&__tgl{ /* tgl as toggle */
+		border: 1px solid $mercury;
+		padding: 5px;
+		border-radius: 30px;
+
+		&__btn{ /* btn as button */
+			color: $black;
+			&.is--active{
+				color: $white;		
+			}
+		}
+
+		&__name{
+			padding: 10px;
+		}
+	}
+}

@@ -425,6 +425,43 @@ td,
 th {
   padding: 0;
 }
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
 @font-face {
   font-family: "Avenir Black";
   src: url("/fonts/avenir-black-webfont.eot"), url("/fonts/avenir-black-webfont.svg"), url("/fonts/avenir-black-webfont.orf"), url("/fonts/avenir-black-webfont.svg"), url("/fonts/avenir-black-webfont.woff"); }
@@ -433,5 +470,126 @@ th {
   font-family: "Avenir Roman";
   src: url("/fonts/avenir-roman-webfont.eot"), url("/fonts/avenir-roman-webfont.svg"), url("/fonts/avenir-roman-webfont.orf"), url("/fonts/avenir-roman-webfont.svg"), url("/fonts/avenir-roman-webfont.woff"); }
 
-.gk_header {
-  /**/ }
+.gk {
+  /* gk as geeko */ }
+  .gk__tgl {
+    /* tgl as toggle */
+    border: 1px solid #e3e3e3;
+    padding: 5px;
+    border-radius: 30px; }
+    .gk__tgl__btn {
+      /* btn as button */
+      color: #000000; }
+      .gk__tgl__btn.is--active {
+        color: #FFFFFF; }
+    .gk__tgl__name {
+      padding: 10px; }
+
+a {
+  text-decoration: none; }
+
+.gk {
+  /* gk as geeko */
+  color: #000000; }
+  .gk__hdr {
+    /* hdr as headr */ }
+    .gk__hdr.is--open .gk__hdr__nav__ctnr {
+      height: auto; }
+    .gk__hdr.is--open .gk__hdr__hmb:before {
+      content: "\F00D"; }
+    .gk__hdr.is--open .gk__hdr__nav__ctnr {
+      padding-bottom: 30px; }
+    .gk__hdr__hmb {
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900; }
+      .gk__hdr__hmb:before {
+        content: "\F0C9"; }
+    .gk__hdr__shp-b {
+      /* shp-b as shooping bag */
+      position: relative;
+      margin-right: 10px; }
+      .gk__hdr__shp-b span {
+        position: absolute;
+        background: #2ebfcd;
+        color: #FFFFFF;
+        top: 0;
+        right: -10px;
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        line-height: 20px;
+        border-radius: 15px;
+        font-size: 14px; }
+    .gk__hdr__t {
+      /* t as top */
+      font-size: 30px;
+      padding: 15px;
+      display: flex;
+      justify-content: space-between; }
+      .gk__hdr__t img {
+        width: 120px; }
+      .gk__hdr__t a {
+        color: #000000; }
+    .gk__hdr__nav {
+      /* nav as navigation */
+      background: #FFFFFF;
+      border-bottom: 1px solid #e3e3e3; }
+      .gk__hdr__nav__ctnr {
+        /* ctnt as container */
+        height: 0;
+        overflow: hidden; }
+      .gk__hdr__nav__p {
+        /* p as page */
+        text-align: center; }
+      .gk__hdr__nav__sn {
+        /* sn as social network */
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        color: black; }
+        .gk__hdr__nav__sn li:not(:last-of-type) {
+          margin-right: 15px; }
+
+.gk {
+  /* gk as geeko */ }
+  .gk__pnl {
+    /* pnl as panel */ }
+    .gk__pnl--sc {
+      /* sc as sweetcorn */
+      padding: 30px 0;
+      background-color: #f7ec8d; }
+    .gk__pnl--wh {
+      background-color: #FFFFFF; }
+
+.gk {
+  /* gk as geeko */ }
+  .gk__n-l {
+    /* n-l as nav link */
+    padding: 15px 0;
+    display: block; }
+    .gk__n-l.is--active {
+      position: relative; }
+      .gk__n-l.is--active:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        display: block;
+        width: 100%;
+        height: 4px;
+        color: #e3e3e3; }
+    .gk__n-l:visited, .gk__n-l:link {
+      color: black; }
+  .gk__h1 {
+    text-transform: uppercase; }
+  .gk__h3 {
+    text-transform: uppercase; }
+  .gk__btn--black {
+    color: #FFFFFF;
+    background-color: #000000;
+    border-radius: 30px;
+    padding: 10px 15px;
+    text-transform: uppercase; }
+    .gk__btn--black:after {
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      content: "\F054"; }
