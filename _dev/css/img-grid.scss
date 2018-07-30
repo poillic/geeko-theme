@@ -1,0 +1,15 @@
+.gk{
+	&__img-grd{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		& img{
+			width: 150px;
+			height: 150px;
+
+			&:nth-child(odd){
+				margin: 0 10px 10px 0;
+			}
+		}
+	}
+}

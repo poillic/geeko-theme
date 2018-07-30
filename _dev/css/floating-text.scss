@@ -1,0 +1,31 @@
+.gk{
+	&__flt-txt{
+		position: relative;
+
+		&__ctnt{
+			position: absolute;
+		    width: 100%;
+		    top: 0;
+		    height: 100%;
+		    display: flex;
+		    left: 0;
+		    flex-direction: column;
+		    justify-content: center;
+		    align-items: center;
+		    text-align: center;
+
+		    &--left{
+		    	position: absolute;
+			    width: 100%;
+			    top: 0;
+			    height: 100%;
+			    display: flex;
+			    left: 0;
+			    flex-direction: column;
+			    justify-content: left;
+			    align-items: left;
+			    text-align: left;
+		    }
+		}
+	}
+}

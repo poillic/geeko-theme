@@ -1,0 +1,33 @@
+.gk{
+	&__ftr{
+		border-top: 1px solid $mercury;
+		padding: 20px 0;
+		text-align: center;
+		font-family: "Avenir Black", sans-serif;
+		
+		& img{
+			max-width: 120px;
+		}
+
+		&__nav{
+			text-align: center;
+			color: $black;
+
+			& a {
+				padding: 15px 0;
+				display: block;
+				&:visited, &:link{
+					color: $black;
+				}
+
+				&:active, &:focused{
+
+				}
+
+				&:hover{
+
+				}
+			}
+		}
+	}
+}

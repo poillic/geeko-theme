@@ -1,0 +1,14 @@
+.gk{
+	&__nav{
+		&__sn{ /* sn as social network */
+			text-align: center;
+			display: flex;
+			justify-content: center;
+			color: black;
+
+			& li:not(:last-of-type){
+				margin-right: 15px;
+			}
+		}
+	}
+}

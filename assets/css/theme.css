@@ -472,27 +472,146 @@ table {
 
 .gk {
   /* gk as geeko */ }
+  .gk__ab {
+    /* ab as avenir black */
+    font-family: "Avenir Black"; }
+  .gk__ar {
+    /* ar as avenir roman */
+    font-family: "Avenir Roman", sans-serif; }
+  .gk__txt-lg {
+    font-size: 20px;
+    line-height: 26px; }
+  .gk__title-xxl {
+    font-size: 36px;
+    line-height: 48px; }
+
+.gk__mrg__t-10 {
+  margin-top: 10px; }
+
+.gk__mrg__t-15 {
+  margin-top: 15px; }
+
+.gk__mrg__t-30 {
+  margin-top: 30px; }
+
+.gk {
+  /* gk as geeko */ }
   .gk__tgl {
     /* tgl as toggle */
     border: 1px solid #e3e3e3;
     padding: 5px;
-    border-radius: 30px; }
+    border-radius: 30px;
+    position: relative;
+    display: flex;
+    font-family: "Avenir Black", sans-serif; }
+    .gk__tgl:not(.is--toggled) .gk__tgl__name:nth-child(2) {
+      color: white; }
+    .gk__tgl.is--toggled .gk__tgl__name:nth-child(2) {
+      color: black; }
     .gk__tgl__btn {
       /* btn as button */
-      color: #000000; }
-      .gk__tgl__btn.is--active {
-        color: #FFFFFF; }
+      background-color: #000000;
+      height: 100%;
+      width: 50%;
+      left: 1%;
+      display: block;
+      position: absolute;
+      border-radius: 50px;
+      max-height: 36px;
+      transition: .5s; }
+      .is--toggled .gk__tgl__btn {
+        left: 49%; }
     .gk__tgl__name {
-      padding: 10px; }
+      padding: 10px;
+      cursor: pointer;
+      z-index: 10;
+      width: 50%;
+      text-align: center;
+      transition: .3s; }
+      .is--toggled .gk__tgl__name:nth-child(3) {
+        color: #FFFFFF; }
+
+.gk__nav__sn {
+  /* sn as social network */
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  color: black; }
+  .gk__nav__sn li:not(:last-of-type) {
+    margin-right: 15px; }
+
+.gk__flt-txt {
+  position: relative; }
+  .gk__flt-txt__ctnt {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    height: 100%;
+    display: flex;
+    left: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; }
+    .gk__flt-txt__ctnt--left {
+      position: absolute;
+      width: 100%;
+      top: 0;
+      height: 100%;
+      display: flex;
+      left: 0;
+      flex-direction: column;
+      justify-content: left;
+      align-items: left;
+      text-align: left; }
+
+.gk__img-grd {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+  .gk__img-grd img {
+    width: 150px;
+    height: 150px; }
+    .gk__img-grd img:nth-child(odd) {
+      margin: 0 10px 10px 0; }
+
+.gk__ftr {
+  border-top: 1px solid #e3e3e3;
+  padding: 20px 0;
+  text-align: center;
+  font-family: "Avenir Black", sans-serif; }
+  .gk__ftr img {
+    max-width: 120px; }
+  .gk__ftr__nav {
+    text-align: center;
+    color: #000000; }
+    .gk__ftr__nav a {
+      padding: 15px 0;
+      display: block; }
+      .gk__ftr__nav a:visited, .gk__ftr__nav a:link {
+        color: #000000; }
 
 a {
   text-decoration: none; }
+
+body {
+  font-family: "Avenir Black"; }
+
+img {
+  width: 100%;
+  height: auto; }
+
+* > * {
+  box-sizing: border-box; }
 
 .gk {
   /* gk as geeko */
   color: #000000; }
   .gk__hdr {
-    /* hdr as headr */ }
+    /* hdr as headr */
+    font-family: "Avenir Black", sans-serif;
+    border-bottom: 1px solid #e3e3e3;
+    background: #FFFFFF; }
     .gk__hdr.is--open .gk__hdr__nav__ctnr {
       height: auto; }
     .gk__hdr.is--open .gk__hdr__hmb:before {
@@ -510,7 +629,7 @@ a {
       margin-right: 10px; }
       .gk__hdr__shp-b span {
         position: absolute;
-        background: #2ebfcd;
+        background: #d55a4f;
         color: #FFFFFF;
         top: 0;
         right: -10px;
@@ -531,9 +650,7 @@ a {
       .gk__hdr__t a {
         color: #000000; }
     .gk__hdr__nav {
-      /* nav as navigation */
-      background: #FFFFFF;
-      border-bottom: 1px solid #e3e3e3; }
+      /* nav as navigation */ }
       .gk__hdr__nav__ctnr {
         /* ctnt as container */
         height: 0;
@@ -541,25 +658,25 @@ a {
       .gk__hdr__nav__p {
         /* p as page */
         text-align: center; }
-      .gk__hdr__nav__sn {
-        /* sn as social network */
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        color: black; }
-        .gk__hdr__nav__sn li:not(:last-of-type) {
-          margin-right: 15px; }
 
 .gk {
   /* gk as geeko */ }
   .gk__pnl {
-    /* pnl as panel */ }
+    /* pnl as panel */
+    padding: 30px 10px; }
     .gk__pnl--sc {
       /* sc as sweetcorn */
       padding: 30px 0;
       background-color: #f7ec8d; }
     .gk__pnl--wh {
       background-color: #FFFFFF; }
+    .gk__pnl__ctnt {
+      padding: 0 15px; }
+  .gk__ctr-txt {
+    /* ctr-txt as centered text*/
+    text-align: center; }
+  .gk__insta {
+    padding: 30px 0; }
 
 .gk {
   /* gk as geeko */ }
@@ -578,9 +695,10 @@ a {
         height: 4px;
         color: #e3e3e3; }
     .gk__n-l:visited, .gk__n-l:link {
-      color: black; }
+      color: #000000; }
   .gk__h1 {
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    font-family: "Avenir Black", sans-serif; }
   .gk__h3 {
     text-transform: uppercase; }
   .gk__btn--black {
@@ -588,8 +706,33 @@ a {
     background-color: #000000;
     border-radius: 30px;
     padding: 10px 15px;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    display: inline-block;
+    font-family: "Avenir Black", sans-serif; }
     .gk__btn--black:after {
       font-family: "Font Awesome 5 Free";
       font-weight: 900;
-      content: "\F054"; }
+      content: "\F054";
+      margin-left: 10px; }
+  .gk__btn--yellow {
+    color: #000000;
+    background-color: #f7ec8d;
+    border-radius: 30px;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    display: inline-block;
+    font-family: "Avenir Black", sans-serif; }
+    .gk__btn--yellow:after {
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      content: "\F054";
+      margin-left: 10px; }
+  .gk__btn__play {
+    color: #FFFFFF;
+    width: 80px;
+    height: 80px;
+    font-family: "Avenir Black", sans-serif;
+    background-color: #000000;
+    line-height: 65px;
+    border-radius: 40px;
+    border: 7px solid #FFFFFF; }

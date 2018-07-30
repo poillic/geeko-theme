@@ -3,16 +3,45 @@
 		border: 1px solid $mercury;
 		padding: 5px;
 		border-radius: 30px;
+		position: relative;
+		display: flex;
+		font-family: "Avenir Black", sans-serif;
+
+		&:not(.is--toggled) .gk__tgl__name:nth-child(2){
+			color: white;
+		}
+
+		&.is--toggled .gk__tgl__name:nth-child(2){
+			color: black;
+		}
 
 		&__btn{ /* btn as button */
-			color: $black;
-			&.is--active{
-				color: $white;		
+			background-color: $black;
+			height: 100%;
+			width: 50%;
+			left: 1%;
+			display: block;
+			position: absolute;
+			border-radius: 50px;
+			max-height: 36px;
+			transition: .5s;
+
+			.is--toggled &{
+				left: 49%;
 			}
 		}
 
 		&__name{
 			padding: 10px;
+			cursor: pointer;
+			z-index: 10;
+			width: 50%;
+			text-align: center;
+			transition: .3s;
+
+			.is--toggled &:nth-child(3){
+				color: $white;		
+			}
 		}
 	}
 }
