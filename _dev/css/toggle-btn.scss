@@ -7,6 +7,11 @@
 		display: flex;
 		font-family: "Avenir Black", sans-serif;
 
+		@include breakpoint("md"){
+			max-width: 300px;
+			margin: 0 auto;
+		}
+
 		&:not(.is--toggled) .gk__tgl__name:nth-child(2){
 			color: white;
 		}

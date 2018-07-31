@@ -7,6 +7,7 @@
 @import "social-network-menu";
 @import "floating-text";
 @import "img-grid";
+@import "header";
 @import "footer";
 
 a{
@@ -15,6 +16,8 @@ a{
 
 body{
 	font-family: "Avenir Black";
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 img{
@@ -24,86 +27,6 @@ img{
 
 * > * {
 	box-sizing: border-box;
-}
-
-.gk{ /* gk as geeko */
-	color: $black;
-
-	&__hdr{ /* hdr as headr */
-		font-family: "Avenir Black", sans-serif;
-		border-bottom: 1px solid $mercury;
-		background: $white;
-
-		&.is--open{
-			& .gk__hdr__nav__ctnr{
-				height: auto;
-			}
-
-			& .gk__hdr__hmb{
-				&:before{
-					content: "\f00d";
-				}	
-			}
-
-			& .gk__hdr__nav__ctnr{
-				padding-bottom: 30px;
-			}
-		}
-
-		&__hmb{
-			font-family: "Font Awesome 5 Free";
-			font-weight: 900;
-			&:before{
-				content: "\f0c9";
-			}
-		}
-
-		&__shp-b{ /* shp-b as shooping bag */
-			position: relative;
-			margin-right: 10px;
-
-			& span{
-				position: absolute;
-				background: $roman;
-				color: $white;
-				top: 0;
-				right: -10px;
-				width: 20px;
-				height: 20px;
-				text-align:center;
-				line-height: 20px;
-				border-radius: 15px;
-				font-size: 14px;
-			}
-		}
-
-		&__t{ /* t as top */
-			font-size: 30px;
-			padding: 15px;
-			display: flex;
-			justify-content: space-between;
-
-			& img{
-				width: 120px;
-			}
-
-			& a {
-				color: $black;
-			}
-		}
-
-		&__nav{ /* nav as navigation */
-
-			&__ctnr{ /* ctnt as container */
-				height: 0;
-				overflow: hidden;
-			}
-
-			&__p{ /* p as page */
-				text-align: center;
-			}
-		}
-	}
 }
 
 .gk{ /* gk as geeko */
@@ -121,6 +44,13 @@ img{
 
 		&__ctnt{
 			padding: 0 15px;
+		}
+
+		& p {
+			@include breakpoint("md"){
+				max-width: 500px;
+				margin: 0 auto;
+			}
 		}
 	}
 
@@ -219,6 +149,14 @@ img{
 			line-height: 65px;
 			border-radius: $btn-size/2;
 			border: 7px solid $white;
+		}
+	}
+}
+
+.gk{
+	&__sm{
+		&-hide{
+			display: none;
 		}
 	}
 }

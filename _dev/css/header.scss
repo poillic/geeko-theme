@@ -1,0 +1,148 @@
+.gk{ /* gk as geeko */
+	color: $black;
+
+	&__hdr{ /* hdr as headr */
+		background: $sweetcorn;
+
+		@include breakpoint("md-max"){
+			display: none;
+		}
+
+		&__mbl{
+			font-family: "Avenir Black", sans-serif;
+			border-bottom: 1px solid $mercury;
+			background: $white;
+
+			@include breakpoint("md"){
+				display: none;
+			}
+
+			&.is--open{
+
+				& .gk__hdr__mbl__nav__ctnr{
+					height: auto;
+				}
+
+				& .gk__hdr__mbl__hmb{
+					&:before{
+						content: "\f00d";
+					}	
+				}
+
+				& .gk__hdr__mbl__nav__ctnr{
+					padding-bottom: 30px;
+				}
+			}
+
+			&__hmb{
+				font-family: "Font Awesome 5 Free";
+				font-weight: 900;
+				&:before{
+					content: "\f0c9";
+				}
+			}
+
+			&__t{ /* t as top */
+				font-size: 30px;
+				padding: 15px;
+				display: flex;
+				justify-content: space-between;
+
+				& img{
+					width: 120px;
+				}
+
+				& a {
+					color: $black;
+				}
+			}
+
+			&__nav{ /* nav as navigation */
+
+				&__ctnr{ /* ctnt as container */
+					height: 0;
+					overflow: hidden;
+				}
+
+				&__p{ /* p as page */
+					text-align: center;
+				}
+			}
+		}
+
+		& nav{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			font-family: "Avenir Black", sans-serif;
+			color: $black;
+			padding: 0 20px;
+
+			& img{
+				width: 90px;
+			}
+
+			& ul{
+				display: flex;
+				& li {
+					& a {
+						padding: 0 20px;
+
+						&:visited, &:link{
+							color: $black;
+						}
+
+						&:active, &:focused{
+
+						}
+
+						&.is--active span{
+							background-image: linear-gradient(90deg, $mercury, $mercury);
+							background-repeat: no-repeat;
+							background-position: 0 100%;
+							background-size: 100% 6px;
+						}
+					}
+				}
+			}
+		}
+
+		&__sd{
+			font-size: 24px;
+			& a{
+				&:first-of-type{
+					margin-right: 30px;
+				}
+
+				&:visited, &:link{
+					color: $black;
+				}
+
+				&:active, &:focused{
+
+				}
+			}
+		}
+	}
+}
+
+.gk{
+	&__shp-b{ /* shp-b as shooping bag */
+	position: relative;
+	margin-right: 10px;
+
+	& span{
+			position: absolute;
+			background: $roman;
+			color: $white;
+			top: 0;
+			right: -10px;
+			width: 20px;
+			height: 20px;
+			text-align:center;
+			line-height: 20px;
+			border-radius: 15px;
+			font-size: 14px;
+		}
+	}
+}
