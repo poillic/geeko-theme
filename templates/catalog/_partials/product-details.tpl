@@ -1,4 +1,5 @@
-<div id="product-details" data-product="{$product|json_encode}">
+<div id="product-details" data-product="{$product|json_encode}">
+  <p style="color:red;font-size:50px">catalog/partials/Product-details.tpl</p>
   {block name='product_reference'}
     {if isset($product_manufacturer->id)}
       <div>

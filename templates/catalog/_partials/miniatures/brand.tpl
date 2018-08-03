@@ -24,6 +24,7 @@
  *}
 {block name='brand_miniature_item'}
   <li class="brand">
+  <p style="color:red;font-size:50px">catalog/partials/miniatures/brand.tpl</p>
     <div class="brand-img"><a href="{$brand.url}"><img src="{$brand.image}" alt="{$brand.name}"></a></div>
     <div class="brand-infos">
       <h3><a href="{$brand.url}">{$brand.name}</a></h3>

@@ -23,6 +23,7 @@
  * International Registered Trademark & Property of PrestaShop SA
  *}
 <div id="search_filters">
+<p style="color:red;font-size:50px">catalog/_partials/facets.tpl</p>
   {foreach from=$facets item="facet"}
     {if $facet.displayed}
       <section class="facet">

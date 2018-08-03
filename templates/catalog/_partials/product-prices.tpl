@@ -22,6 +22,7 @@
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  * International Registered Trademark & Property of PrestaShop SA
  *}
+ <p style="color:red;font-size:50px">catalog/partials/Product-price.tpl</p>
 {if $product.show_price}
   <div class="product-prices">
     {block name='product_discount'}

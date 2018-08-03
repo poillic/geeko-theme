@@ -23,6 +23,7 @@
  * International Registered Trademark & Property of PrestaShop SA
  *}
 <div class="images-container">
+<p style="color:red;font-size:50px">catalog/paritals/product-cover-thumbnails.tpl</p>
   {block name='product_cover'}
     <div class="product-cover">
       <img src="{$product.cover.bySize.medium_default.url}" alt="{$product.cover.legend}" title="{$product.cover.legend}" width="{$product.cover.bySize.medium_default.width}" itemprop="image">

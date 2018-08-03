@@ -24,6 +24,7 @@
  *}
 {block name='category_miniature_item'}
   <section class="category-miniature">
+   <p style="color:red;font-size:50px">catalog/partials/miniatures/category.tpl</p>
     <a href="{$category.url}">
       <img src="{$category.image.medium.url}" alt="{$category.image.legend}">
     </a>

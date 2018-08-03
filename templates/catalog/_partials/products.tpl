@@ -23,6 +23,7 @@
  * International Registered Trademark & Property of PrestaShop SA
  *}
 <div id="js-product-list">
+  <p style="color:red;font-size:50px">catalog/partials/products.tpl</p>
   {foreach from=$listing.products item="product"}
     {block name='product_miniature'}
       {include file='catalog/_partials/miniatures/product.tpl' product=$product}

@@ -46,8 +46,9 @@
 {/block}
 
 {block name='content'}
-
+  
   <section id="main" itemscope itemtype="https://schema.org/Product">
+    <p style="color:red;font-size:50px">catalog/Product.tpl</p>
     <meta itemprop="url" content="{$product.url}">
 
     {block name='product_activation'}

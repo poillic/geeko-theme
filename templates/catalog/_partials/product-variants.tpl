@@ -23,6 +23,7 @@
  * International Registered Trademark & Property of PrestaShop SA
  *}
 <div class="product-variants">
+<p style="color:red;font-size:50px">catalog/partials/Product-variant.tpl</p>
   {foreach from=$groups key=id_attribute_group item=group}
 
     <label for="group_{$id_attribute_group}">{$group.name}</label>

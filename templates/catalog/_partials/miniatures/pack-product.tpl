@@ -24,6 +24,7 @@
  *}
 {block name='pack_miniature_item'}
   <article>
+   <p style="color:red;font-size:50px">catalog/partials/miniatures/pack-product.tpl</p>
       <h1>{$product.name}</h1>
       <img
         src = "{$product.cover.small.url}"

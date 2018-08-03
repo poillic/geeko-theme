@@ -23,6 +23,7 @@
  * International Registered Trademark & Property of PrestaShop SA
  *}
 <div class="products-sort-order">
+<p style="color:red;font-size:50px">catalog/partials/sort-order.tpl</p>
   <span>{if isset($listing.sort_selected)}{$listing.sort_selected}{else}{l s='Sort by:' d='Shop.Theme.Global'}{/if}</span>
   {foreach from=$sort_orders item=sort_order}
     <a

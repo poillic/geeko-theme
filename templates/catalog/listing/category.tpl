@@ -28,6 +28,7 @@
 
   <h1>{$category.name}</h1>
   <div class="category-cover">
+   <p style="color:red;font-size:50px">catalog/partials/listing/category.tpl</p>
     <img src="{$category.image.large.url}" alt="{$category.image.legend}">
   </div>
   <div id="category-description">{$category.description nofilter}</div>

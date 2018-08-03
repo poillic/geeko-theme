@@ -23,6 +23,7 @@
  * International Registered Trademark & Property of PrestaShop SA
  *}
 <section id="js-active-search-filters" class="active_filters">
+	<p style="color:red;font-size:50px">catalog/paritals/active_filters.tpl</p>
   <h1 class="h3">{l s='Active filters' d='Shop.Theme.Global'}</h1>
   {if $activeFilters|count}
     <ul>

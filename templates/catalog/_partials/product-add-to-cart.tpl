@@ -23,6 +23,7 @@
  * International Registered Trademark & Property of PrestaShop SA
  *}
 <div class="product-add-to-cart">
+<p style="color:red;font-size:50px">catalog/partials/Productadd-to-cart.tpl</p>
   {if !$configuration.is_catalog}
 
     {block name='product_quantity'}
