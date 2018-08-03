@@ -1,4 +1,11 @@
-<div id="_desktop_cart">
+<a href="{$cart_url}" class="gk__shp-b" >
+  <i class="fas fa-shopping-bag"></i>
+  {if $cart.products_count > 0}
+    <span>{$cart.products_count}</span>
+  {/if}
+</a>
+
+<!--div id="_desktop_cart">
   <div class="blockcart cart-preview {if $cart.products_count > 0}active{else}inactive{/if}" data-refresh-url="{$refresh_url}">
     <div class="header">
       {if $cart.products_count > 0}
@@ -12,4 +19,4 @@
       {/if}
     </div>
   </div>
-</div>
+</div-->

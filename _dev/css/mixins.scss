@@ -22,5 +22,8 @@
   }
   @else if $point == md-max { // 800px
      @media (max-width: 50em) { @content ; }
- }
+  }
+  @else if $point == vlg-max {
+     @media (max-width: 70em) { @content ; }
+  }
 }

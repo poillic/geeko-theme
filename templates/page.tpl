@@ -27,7 +27,6 @@
 {block name='content'}
 
   <section id="main">
-
     {block name='page_header_container'}
       <header class="page-header">
         {block name='page_header'}
@@ -36,6 +35,11 @@
       </header>
     {/block}
 
+    {if $urls.current_url eq "http://localhost/presta/content/1-nos-produits" }
+      {include file='geeko_tpl/nos-produits.tpl'}
+    {elseif $urls.current_url eq "http://localhost/presta/content/7-notre-histoire" }
+      {include file='geeko_tpl/notre-histoire.tpl'}
+    {/if}
     {block name='page_content_container'}
       <section id="content" class="page-content">
         {block name='page_content'}

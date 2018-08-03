@@ -1,39 +1,30 @@
-{**
- * 2007-2017 PrestaShop
- *
- * NOTICE OF LICENSE
- *
- * This source file is subject to the Academic Free License 3.0 (AFL-3.0)
- * that is bundled with this package in the file LICENSE.txt.
- * It is also available through the world-wide-web at this URL:
- * https://opensource.org/licenses/AFL-3.0
- * If you did not receive a copy of the license and are unable to
- * obtain it through the world-wide-web, please send an email
- * to license@prestashop.com so we can send you a copy immediately.
- *
- * DISCLAIMER
- *
- * Do not edit or add to this file if you wish to upgrade PrestaShop to newer
- * versions in the future. If you wish to customize PrestaShop for your
- * needs please refer to http://www.prestashop.com for more information.
- *
- * @author    PrestaShop SA <contact@prestashop.com>
- * @copyright 2007-2017 PrestaShop SA
- * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
- * International Registered Trademark & Property of PrestaShop SA
- *}
+<header class="gk__hdr__mbl" data-menu>
+	<div class="gk__hdr__mbl__t">
+		<a href="" class="gk__hdr__mbl__hmb" data-menu-toggle></a>
+		<a href="#"><img src="{$shop.logo}" alt="{$shop.name}"></a>
+		{hook h='displayNav'}
+	</div>
+	<nav class="gk__hdr__mbl__nav" >
+		<div class="gk__hdr__mbl__nav__ctnr" >
+			{hook h='displayNav1'}
+			<ul class="gk__nav__sn">
+				<li><a class="gk__n-l" href=""><i class="fab fa-twitter"></i></a></li>
+				<li><a class="gk__n-l" href=""><i class="fab fa-facebook"></i></a></li>
+				<li><a class="gk__n-l" href=""><i class="fab fa-instagram"></i></a></li>
+			</ul>
+		</div>
+	</nav>
+</header>
 
-
-{block name='header_banner'}
-  <div class="header-banner">
-    {hook h='displayBanner'}
-  </div>
-{/block}
-
-{block name='header_nav'}
-  <div class="header-nav">
-    <img src="{$shop.logo}" alt="{$shop.name}">
-    <a class="fa-fw select-all fas"></a>
-    {hook h='displayNav'}
-  </div>
-{/block}
+<header class="gk__hdr">
+	<nav>
+		<a href="">
+			<img src="logo_square.svg">
+		</a>
+		{hook h='displayNavFullWidth'}
+		<div class="gk__hdr__sd">
+			<a href="" class="gk__hdr__usr" ><i class="fas fa-user"></i></a>
+			<a href="" class="gk__shp-b" ><i class="fas fa-shopping-bag"></i><span>2</span></a>
+		</div>
+	</nav>
+</header>

@@ -37,14 +37,8 @@
       {hook h='displayAfterBodyOpeningTag'}
     {/block}
 
-    <header id="header">
-      {block name='header'}
-        {include file='_partials/header.tpl'}
-      {/block}
-    </header>
-
-    {block name='notifications'}
-      {include file='_partials/notifications.tpl'}
+    {block name='header'}
+      {include file='_partials/header.tpl'}
     {/block}
 
     <div id="wrapper">
@@ -87,11 +81,10 @@
       {hook h="displayWrapperBottom"}
     </div>
 
-    <footer id="footer">
-      {block name='footer'}
-        {include file='_partials/footer.tpl'}
-      {/block}
-    </footer>
+
+    {block name='footer'}
+      {include file='_partials/footer.tpl'}
+    {/block}
 
     {block name='javascript_bottom'}
       {include file="_partials/javascript.tpl" javascript=$javascript.bottom}

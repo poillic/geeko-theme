@@ -1,40 +1,25 @@
-{**
- * 2007-2017 PrestaShop
- *
- * NOTICE OF LICENSE
- *
- * This source file is subject to the Academic Free License 3.0 (AFL-3.0)
- * that is bundled with this package in the file LICENSE.txt.
- * It is also available through the world-wide-web at this URL:
- * https://opensource.org/licenses/AFL-3.0
- * If you did not receive a copy of the license and are unable to
- * obtain it through the world-wide-web, please send an email
- * to license@prestashop.com so we can send you a copy immediately.
- *
- * DISCLAIMER
- *
- * Do not edit or add to this file if you wish to upgrade PrestaShop to newer
- * versions in the future. If you wish to customize PrestaShop for your
- * needs please refer to http://www.prestashop.com for more information.
- *
- * @author    PrestaShop SA <contact@prestashop.com>
- * @copyright 2007-2017 PrestaShop SA
- * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
- * International Registered Trademark & Property of PrestaShop SA
- *}
-{block name='hook_footer_before'}
-  {hook h='displayFooterBefore'}
-{/block}
+<footer class="gk__ftr">
+	<img src="logo_square.svg">
+	{block name='hook_footer_before'}
+	  {hook h='displayFooterBefore'}
+	{/block}
 
-{block name='hook_footer'}
-  {hook h='displayFooter'}
-{/block}
+	{block name='hook_footer'}
+	  {hook h='displayFooter'}
+	{/block}
 
-{block name='hook_footer_after'}
-  {hook h='displayFooterAfter'}
-{/block}
+	{block name='hook_footer_after'}
+	  {hook h='displayFooterAfter'}
+	{/block}
 
-<p>
-  {block name='copyright_link'}
-  {/block}
-</p>
+	<p>
+	  {block name='copyright_link'}
+	  {/block}
+	</p>
+	<ul class="gk__nav__sn">
+		<li><a class="gk__n-l" href=""><i class="fab fa-twitter"></i></a></li>
+		<li><a class="gk__n-l" href=""><i class="fab fa-facebook"></i></a></li>
+		<li><a class="gk__n-l" href=""><i class="fab fa-instagram"></i></a></li>
+	</ul>
+	<div>@2018 <span>Geeko</span>. Tous Droits Réservés.
+</footer>

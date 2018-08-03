@@ -1,31 +1,69 @@
-{**
- * 2007-2017 PrestaShop
- *
- * NOTICE OF LICENSE
- *
- * This source file is subject to the Academic Free License 3.0 (AFL-3.0)
- * that is bundled with this package in the file LICENSE.txt.
- * It is also available through the world-wide-web at this URL:
- * https://opensource.org/licenses/AFL-3.0
- * If you did not receive a copy of the license and are unable to
- * obtain it through the world-wide-web, please send an email
- * to license@prestashop.com so we can send you a copy immediately.
- *
- * DISCLAIMER
- *
- * Do not edit or add to this file if you wish to upgrade PrestaShop to newer
- * versions in the future. If you wish to customize PrestaShop for your
- * needs please refer to http://www.prestashop.com for more information.
- *
- * @author    PrestaShop SA <contact@prestashop.com>
- * @copyright 2007-2017 PrestaShop SA
- * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
- * International Registered Trademark & Property of PrestaShop SA
- *}
 {extends file='page.tpl'}
 
 {block name='page_content'}
   {block name='hook_home'}
     {$HOOK_HOME nofilter}
+    <main>
+		<section class="gk__pnl--sc gk__ctr-txt">
+			<h1 class="gk__h1 gk__title-xxl">Le meuble optimal pour les gamers</h1>
+			<h3 class="gk__h3 gk__mrg__t-10">fabriqué en france</h3>
+			<a href="" class="gk__btn--black gk__mrg__t-15">acheter</a>
+		</section>
+
+		<section  class="gk__pnl">
+			<div class="gk__pnl__ctnt">
+				<p class="gk__ctr-txt gk__ar gk__txt-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent finibus dolor in pretium molestie. Integer sed convallis ex, a semper mauris.</p>
+
+				<div class="gk__tgl gk__mrg__t-30" data-switch-toggle>
+					<span class="gk__tgl__btn"></span>
+					<span class="gk__tgl__name is--active">L'intemporel</span>
+					<span class="gk__tgl__name">L'industriel</span>
+				</div>
+			</div>
+
+			<div class="gk__mosaic">
+				<div>
+					<div><img class="gk__vlg-show" src="https://picsum.photos/342/300"></div>
+					<div class="gk__flt-txt">
+						<img src="https://picsum.photos/682/300">
+						<div class="gk__flt-txt__ctnt--left">
+							<p>Le meuble optimal pour les gamers</p>
+							<span>A partir de 550€</span>
+						</div>
+					</div>
+				</div>
+				<div class="gk__mrg__t-15">
+					<div class="gk__flt-txt">
+						<div><img src="https://picsum.photos/682/300"></div>
+						<div class="gk__flt-txt__ctnt">
+							<p>Que semper iter facit multos hospites abet sed paucos amicos.</p>
+							<a href="" class="gk__btn--yellow gk__mrg__t-15">En savoir plus</a>
+						</div>
+					</div>
+					<div><img class="gk__vlg-show" src="https://picsum.photos/342/300"></div>
+				</div>
+			</div>
+		</section>
+
+		<section id="video" class="gk__flt-txt">
+			<img class="gk__img-fw" src="https://picsum.photos/1280/720">
+			<div class="gk__flt-txt__ctnt">
+				<a href="" class="gk__btn__play">play</a>
+			</div>
+		</section>
+
+		<section class="gk__insta gk__ctr-txt">
+			<p>instagram</p>
+			<h2 class="gk__mrg__t-15">Suivez-nous sur @geeko</h2>
+			<a href="" class="gk__btn--black gk__mrg__t-15">suivez-nous</a>
+
+			<div class="gk__img-grd gk__mrg__t-30">
+				<img src="https://picsum.photos/150/150">
+				<img src="https://picsum.photos/150/150">
+				<img src="https://picsum.photos/150/150">
+				<img src="https://picsum.photos/150/150">
+			</div>
+		</section>
+	</main>
   {/block}
 {/block}

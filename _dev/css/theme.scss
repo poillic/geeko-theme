@@ -20,10 +20,6 @@ body{
 	-moz-osx-font-smoothing: grayscale;
 }
 
-img{
-	width: 100%;
-	height: auto;
-}
 
 * > * {
 	box-sizing: border-box;
@@ -159,10 +155,40 @@ img{
 			display: none;
 		}
 	}
+
+	&__vlg{
+		&-show{
+			@include breakpoint("vlg-max"){
+				display: none;
+			}
+		}
+	}
 }
 
 .gk{
 	&__mosaic{
-		 
+		margin:  auto;
+		& > div {
+			width: 100%;
+			font-size: 0;
+			@include breakpoint("md"){
+				justify-content: center;
+				display: flex;
+				flex-wrap: wrap;
+			}
+
+			& > div:nth-child(2){
+				@include breakpoint("vlg"){
+					margin-left: 15px;
+				}
+			}
+		}
+	} 
+}
+
+.gk{
+	&__img-fw{
+		width: 100%;
+		height: auto;
 	}
 }

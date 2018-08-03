@@ -3,7 +3,8 @@
 
 	&__hdr{ /* hdr as headr */
 		background: $sweetcorn;
-
+		padding-top: 20px;
+		
 		@include breakpoint("md-max"){
 			display: none;
 		}
@@ -12,7 +13,7 @@
 			font-family: "Avenir Black", sans-serif;
 			border-bottom: 1px solid $mercury;
 			background: $white;
-
+			text-align: center;
 			@include breakpoint("md"){
 				display: none;
 			}

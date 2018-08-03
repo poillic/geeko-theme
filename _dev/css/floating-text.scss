@@ -1,8 +1,9 @@
 .gk{
 	&__flt-txt{
 		position: relative;
-
+		font-size: 0;
 		&__ctnt{
+			font-size: initial;
 			position: absolute;
 		    width: 100%;
 		    top: 0;
@@ -15,6 +16,7 @@
 		    text-align: center;
 
 		    &--left{
+				font-size: initial;
 		    	position: absolute;
 			    width: 100%;
 			    top: 0;
