@@ -3,7 +3,7 @@
 {block name='page_content'}
   {block name='hook_home'}
     {$HOOK_HOME nofilter}
-    <main>
+    <main style="border:3px solid pink;">
 		<section class="gk__pnl--sc gk__ctr-txt">
 			<h1 class="gk__h1 gk__title-xxl">Le meuble optimal pour les gamers</h1>
 			<h3 class="gk__h3 gk__mrg__t-10">fabriqué en france</h3>

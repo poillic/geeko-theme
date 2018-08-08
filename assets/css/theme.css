@@ -544,6 +544,10 @@ table {
   .gk__nav__sn li:not(:last-of-type) {
     margin-right: 15px; }
 
+.gk__crsl-pdt {
+  display: flex;
+  overflow: hidden; }
+
 .gk__flt-txt {
   position: relative;
   font-size: 0; }

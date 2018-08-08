@@ -25,8 +25,8 @@
 {extends file=$layout}
 
 {block name='content'}
-  <section id="main">
- <p style="color:red;font-size:50px">catalog/listing/prodcut-list.tpl</p>
+  <section id="main" style="border:3px solid pink;">
+ <p style="color:red;font-size:50px">catalog/listing/product-list.tpl</p>
     {block name='product_list_header'}
       <h2 class="h2">{$listing.label}</h2>
     {/block}

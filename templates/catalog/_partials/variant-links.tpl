@@ -24,7 +24,7 @@
  *}
 {block name='variant_links'}
   <div class="variant-links">
-  <p style="color:red;font-size:50px">catalog/partials/variant-links.tpl</p>
+  <p style="color:red;font-size:10px">catalog/partials/variant-links.tpl</p>
     {foreach from=$variants item=variant}
 
       {block name='variant_link_item'}
