@@ -544,9 +544,14 @@ table {
   .gk__nav__sn li:not(:last-of-type) {
     margin-right: 15px; }
 
+.gk__pdt-pnl {
+  border-bottom: 2px solid #000000; }
+
 .gk__crsl-pdt {
   display: flex;
   overflow: hidden; }
+  .gk__crsl-pdt__art span {
+    text-transform: uppercase; }
 
 .gk__flt-txt {
   position: relative;

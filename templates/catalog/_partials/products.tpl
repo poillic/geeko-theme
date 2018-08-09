@@ -1,5 +1,4 @@
-<section id="js-product-list" style="border:3px solid green;">
-
+<section class="gk__pdt-pnl" id="js-product-list">
   <div>
     <a href="#">Previous</a>
     <ul class="gk__crsl-pdt">

@@ -1,6 +1,21 @@
 .gk{
+	&__pdt-pnl{
+		border-bottom: 2px solid $black;
+	} 
+
 	&__crsl-pdt{
 		display: flex;
 		overflow: hidden;
+
+		& li{
+
+		}
+		
+		&__art{
+			& span {
+				text-transform: uppercase;
+			}
+		}
 	}
+
 }
