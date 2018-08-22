@@ -1,24 +1,52 @@
-/**
- * 2007-2017 PrestaShop
- *
- * NOTICE OF LICENSE
- *
- * This source file is subject to the Academic Free License 3.0 (AFL-3.0)
- * that is bundled with this package in the file LICENSE.txt.
- * It is also available through the world-wide-web at this URL:
- * https://opensource.org/licenses/AFL-3.0
- * If you did not receive a copy of the license and are unable to
- * obtain it through the world-wide-web, please send an email
- * to license@prestashop.com so we can send you a copy immediately.
- *
- * DISCLAIMER
- *
- * Do not edit or add to this file if you wish to upgrade PrestaShop to newer
- * versions in the future. If you wish to customize PrestaShop for your
- * needs please refer to http://www.prestashop.com for more information.
- *
- * @author    PrestaShop SA <contact@prestashop.com>
- * @copyright 2007-2017 PrestaShop SA
- * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
- * International Registered Trademark & Property of PrestaShop SA
- */
+console.log("custom.js");
+
+/* CAROUSEL MANAGER */
+let currentSlide = 0;
+let carousel = document.querySelector("[data-crsl-pdt]");
+let carouselList = carousel.querySelector("[data-crsl-pdt-list]");
+let slides = carousel.querySelectorAll("[data-crsl-pdt-slide]");
+let prvBtn = carousel.querySelector("[data-crsl-pdt-prv]");
+let nxtBtn = carousel.querySelector("[data-crsl-pdt-nxt]");
+
+
+prvBtn.addEventListener("click", function( e ){
+	e.preventDefault();
+	moveCarousel( -1 );
+});
+
+nxtBtn.addEventListener("click", function( e ){
+	e.preventDefault();
+	moveCarousel( 1 );
+});
+
+function moveCarousel( idx ){
+	currentSlide += idx;
+
+	if( currentSlide <= 0 ){
+		currentSlide = 0;
+		prvBtn.classList.add("hide");
+	}else if( currentSlide >= slides.length - 1 ){
+		currentSlide = slides.length - 1;
+		nxtBtn.classList.add("hide");
+	}else{
+		nxtBtn.classList.remove("hide");
+		prvBtn.classList.remove("hide");
+	}
+
+	let slideLength = slides[ currentSlide ].clientWidth;
+	console.log( currentSlide, slides, slideLength );
+	cleanSlides();
+	slides[ currentSlide ].classList.add("is--active");
+	carouselList.style.left = "-" + currentSlide * slideLength + "px";
+}
+
+function cleanSlides(){
+	for( s of slides ){
+		s.classList.remove( "is--active" );
+	}
+}
+
+
+moveCarousel( 0 );
+
+console.log(prvBtn, nxtBtn);

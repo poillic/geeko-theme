@@ -1,5 +1,5 @@
 {block name='product_miniature_item'}
-<li style="border:1px solid pink;" >
+<li data-crsl-pdt-slide>
     <article class="gk__crsl-pdt__art" data-id-product="{$product.id_product}" data-id-product-attribute="{$product.id_product_attribute}" itemscope itemtype="http://schema.org/Product">
       {block name='product_thumbnail'}
         <img
@@ -10,8 +10,10 @@
       {/block}
 
       {block name='product_name'}
-        <span>A partir de {$product.price}</span>
-        <h1 class="gk__h1" itemprop="name">{$product.name}</h1>
+        <div>
+          <span>A partir de {$product.price}</span>
+          <h2 class="gk__h1" itemprop="name">{$product.name}</h2>
+        </div>
       {/block}
 
       <a class="gk__btn--black" href="{$product.url}">Découvrir</a>

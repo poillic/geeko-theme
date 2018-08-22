@@ -1,17 +1,61 @@
 .gk{
 	&__pdt-pnl{
 		border-bottom: 2px solid $black;
+		background-color: $sweetcorn;
 	} 
 
 	&__crsl-pdt{
-		display: flex;
+		position: relative;
+		height: 396px;
 		overflow: hidden;
+		& ul {
+			position: absolute;
+			left: 0;
+			top: 0;
+			display: flex;
+			overflow: hidden;
+			transition: left 0.3s linear;
 
-		& li{
-
+			& li{
+				&.is--active{
+					opacity: 1;
+				}
+				width: 400px;
+				flex-shrink: 0;
+				opacity: 0.35;
+			}
 		}
 		
+		&__btn{
+			background: $black;
+			color: $white;
+			padding: 10px;
+			border-radius: 20px;
+			width: 36px;
+			height: 36px;
+			display: inline-block;
+			text-align: center;
+			line-height: 18px;
+			position: absolute;
+			top: 50%;
+			margin-top: -18px;
+			z-index: 1;
+
+			&.nxt{
+				left: 10px;
+			}
+
+			&.prv{
+				right: 10px;
+			}
+
+			&.hide{
+				display:none;
+			}
+		}
+
 		&__art{
+			padding: 60px;
 			& span {
 				text-transform: uppercase;
 			}

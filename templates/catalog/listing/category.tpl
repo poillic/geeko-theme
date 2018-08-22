@@ -1,16 +1,15 @@
 {extends file='catalog/listing/product-list.tpl'}
 
 {block name='product_list_header'}
-
-   <p style="color:red;font-size:50px">catalog/partials/listing/category.tpl</p>
+  <!--
   <h1>{$category.name}</h1>
   <div class="category-cover" style="border:3px solid pink;">
     <img src="{$category.image.large.url}" alt="{$category.image.legend}">
   </div>
   <div id="category-description">{$category.description nofilter}</div>
-
+-->
   {block name='category_subcategories'}
-    <aside>
+    <!--aside>
       {if $subcategories|count}
         <nav class="subcategories">
           <ul>
@@ -24,7 +23,7 @@
           </ul>
         </nav>
       {/if}
-    </aside>
+    </aside-->
   {/block}
 
 {/block}
