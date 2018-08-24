@@ -16,6 +16,7 @@
 	  {block name='copyright_link'}
 	  {/block}
 	</p>
+	
 	<ul class="gk__nav__sn">
 		<li><a class="gk__n-l" href=""><i class="fab fa-twitter"></i></a></li>
 		<li><a class="gk__n-l" href=""><i class="fab fa-facebook"></i></a></li>

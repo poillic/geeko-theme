@@ -1,10 +1,10 @@
 <div id="search_filters" class="gk__flt">
-  <section>
+  <section  class="col-xs-8 facet gk__flt__fct">
     <h2>Tous les produits</h2>
   </section>
   {foreach from=$facets item="facet"}
     {if $facet.displayed}
-      <section class="facet gk__flt__fct">
+      <section class="col-xs-2 facet gk__flt__fct">
         {if $facet.widgetType !== 'dropdown'}
           <ul>
             {foreach from=$facet.filters item="filter"}

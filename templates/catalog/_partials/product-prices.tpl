@@ -1,28 +1,3 @@
-{**
- * 2007-2017 PrestaShop
- *
- * NOTICE OF LICENSE
- *
- * This source file is subject to the Academic Free License 3.0 (AFL-3.0)
- * that is bundled with this package in the file LICENSE.txt.
- * It is also available through the world-wide-web at this URL:
- * https://opensource.org/licenses/AFL-3.0
- * If you did not receive a copy of the license and are unable to
- * obtain it through the world-wide-web, please send an email
- * to license@prestashop.com so we can send you a copy immediately.
- *
- * DISCLAIMER
- *
- * Do not edit or add to this file if you wish to upgrade PrestaShop to newer
- * versions in the future. If you wish to customize PrestaShop for your
- * needs please refer to http://www.prestashop.com for more information.
- *
- * @author    PrestaShop SA <contact@prestashop.com>
- * @copyright 2007-2017 PrestaShop SA
- * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
- * International Registered Trademark & Property of PrestaShop SA
- *}
- <p style="color:red;font-size:50px">catalog/partials/Product-price.tpl</p>
 {if $product.show_price}
   <div class="product-prices">
     {block name='product_discount'}
@@ -35,7 +10,7 @@
     {/block}
 
     {block name='product_price'}
-      <p class="product-price {if $product.has_discount}has-discount{/if}" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+      <!--p class="product-price {if $product.has_discount}has-discount{/if}" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
         <link itemprop="availability" href="https://schema.org/InStock"/>
         <span itemprop="price" content="{$product.price_amount}">{$product.price}</span>
         {if $configuration.display_taxes_label}
@@ -50,12 +25,12 @@
             <span class="discount-amount">{l s='Save %amount%' d='Shop.Theme.Catalog' sprintf=['%amount%' => $product.discount_amount]}</span>
           {/if}
         {/if}
-      </p>
+      </p-->
     {/block}
 
     {block name='product_without_taxes'}
       {if $priceDisplay == 2}
-        <p class="product-without-taxes">{l s='%price% tax excl.' d='Shop.Theme.Catalog' sprintf=['%price%' => $product.price_tax_exc]}</p>
+        <!--p class="product-without-taxes">{l s='%price% tax excl.' d='Shop.Theme.Catalog' sprintf=['%price%' => $product.price_tax_exc]}</p-->
       {/if}
     {/block}
 

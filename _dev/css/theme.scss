@@ -1,3 +1,4 @@
+@import "flexboxgrid";
 @import "reset";
 @import "variables";
 @import "mixins";
@@ -8,6 +9,7 @@
 @import "carousel-product";
 @import "floating-text";
 @import "img-grid";
+@import "product";
 @import "filters";
 @import "header";
 @import "footer";
@@ -106,6 +108,7 @@ body{
 		&--black{
 			color: $white;
 			background-color: $black;
+			border: none;
 			border-radius: 30px;
 			padding: 10px 15px;
 			text-transform: uppercase;
@@ -192,5 +195,29 @@ body{
 	&__img-fw{
 		width: 100%;
 		height: auto;
+	}
+}
+
+.gk{
+	&__nav{
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+
+		@include breakpoint("md"){
+			flex-direction: row;
+			max-width: 1024px;
+			margin: 0 auto;
+		}
+
+		& li {
+
+			& a{
+				padding: 20px 0;
+				@include breakpoint("md"){
+					padding: 0 20px;
+				}
+			}
+		}
 	}
 }

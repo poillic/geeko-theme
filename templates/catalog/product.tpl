@@ -1,27 +1,3 @@
-{**
- * 2007-2017 PrestaShop
- *
- * NOTICE OF LICENSE
- *
- * This source file is subject to the Academic Free License 3.0 (AFL-3.0)
- * that is bundled with this package in the file LICENSE.txt.
- * It is also available through the world-wide-web at this URL:
- * https://opensource.org/licenses/AFL-3.0
- * If you did not receive a copy of the license and are unable to
- * obtain it through the world-wide-web, please send an email
- * to license@prestashop.com so we can send you a copy immediately.
- *
- * DISCLAIMER
- *
- * Do not edit or add to this file if you wish to upgrade PrestaShop to newer
- * versions in the future. If you wish to customize PrestaShop for your
- * needs please refer to http://www.prestashop.com for more information.
- *
- * @author    PrestaShop SA <contact@prestashop.com>
- * @copyright 2007-2017 PrestaShop SA
- * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
- * International Registered Trademark & Property of PrestaShop SA
- *}
 {extends file=$layout}
 
 {block name='head_seo' prepend}
@@ -48,59 +24,62 @@
 {block name='content'}
   
   <section id="main" itemscope itemtype="https://schema.org/Product">
-    <p style="color:red;font-size:50px">catalog/Product.tpl</p>
     <meta itemprop="url" content="{$product.url}">
-
-    {block name='product_activation'}
-      {include file='catalog/_partials/product-activation.tpl'}
-    {/block}
-
-    {block name='page_header_container'}
-      <header class="page-header">
-        {block name='page_header'}
-          <h1 itemprop="name">{block name='page_title'}{$product.name}{/block}</h1>
-        {/block}
-      </header>
-    {/block}
 
     {block name='page_content_container'}
       <section id="content" class="page-content">
+        <div class="gk__pdt__hdr row">
+          <div class="col-xs-8 row gk__pdt__hdr__ctnt">
+            <div class="col-xs-6">
+              {block name='product_cover_thumbnails'}
+                {include file='catalog/_partials/product-cover-thumbnails.tpl'}
+              {/block}
+            </div>
+            <div class="col-xs-6">
+              <p>A partir de <span class="regular-price">{$product.regular_price}</span></p>
+              <h1 class="gk__pdt__hdr__t" itemprop="name">{block name='page_title'}{$product.name}{/block}</h1>
+              {block name='product_description_short'}
+                <div id="product-description-short" class="gk__pdt__hdr__dsc" itemprop="description">{$product.description_short nofilter}</div>
+              {/block}
+
+              {block name='product_add_to_cart'}
+                {include file='catalog/_partials/product-add-to-cart.tpl'}
+              {/block}
+            </div>
+          </div>
+        </div>
+
         {block name='page_content'}
           {block name='product_flags'}
-            <ul class="product-flags">
+            <!--ul class="product-flags">
               {foreach from=$product.flags item=flag}
                 <li>{$flag.label}</li>
               {/foreach}
-            </ul>
+            </ul-->
           {/block}
 
-          {block name='product_cover_thumbnails'}
-            {include file='catalog/_partials/product-cover-thumbnails.tpl'}
-          {/block}
 
           <div class="product-information">
             {block name='product_reference'}
               {if $product.reference}
-                <p id="product-reference">
+                <!--p id="product-reference">
                   <label>{l s='Reference' d='Shop.Theme.Catalog'}</label>
                   <span itemprop="sku">{$product.reference}</span>
-                </p>
+                </p-->
               {/if}
             {/block}
 
             {block name='product_condition'}
               {if $product.condition}
-                <p id="product-condition">
+                <!--p id="product-condition">
                   <label>{l s='Condition' d='Shop.Theme.Catalog'}</label>
                   <link itemprop="itemCondition" href="{$product.condition.schema_url}"/>
                   <span>{$product.condition.label}</span>
-                </p>
+                </p-->
               {/if}
             {/block}
 
-            {block name='product_description_short'}
-              <div id="product-description-short" itemprop="description">{$product.description_short nofilter}</div>
-            {/block}
+
 
             {block name='product_description'}
               <div id="product-description">{$product.description nofilter}</div>
@@ -108,7 +87,7 @@
 
             {block name='product_quantities'}
               {if $product.show_quantities}
-                <p id="product-quantities">{$product.quantity} {$product.quantity_label}</p>
+                <!--p id="product-quantities">{$product.quantity} {$product.quantity_label}</p-->
               {/if}
             {/block}
 
@@ -147,11 +126,6 @@
 
                 {block name='product_variants'}
                   {include file='catalog/_partials/product-variants.tpl'}
-                {/block}
-
-
-                {block name='product_add_to_cart'}
-                  {include file='catalog/_partials/product-add-to-cart.tpl'}
                 {/block}
 
                 {block name='hook_product_buttons'}

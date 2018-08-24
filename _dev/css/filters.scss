@@ -2,15 +2,18 @@
 	&__flt{
 		border-top: 2px solid $black;
 		display: flex;
-
+		background: $mercury;
 		&__fct{
+			padding: 0;
+			align-self: center;
 			& select{
 				height: 60px;
 				border: none;
-
+				width: 100%;
 			}
-			&:not(:first-of-type){
-				border-right: 1px solid black;
+
+			&:not(:last-of-type){
+				border-right: 1px solid $mercury;
 			}
 		}
 

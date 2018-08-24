@@ -1,4 +1,5 @@
 <section id="js-active-search-filters" class="active_filters">
+	<!--
   {if $activeFilters|count}
     <ul>
       {foreach from=$activeFilters item="filter"}
@@ -7,4 +8,5 @@
     </ul>
   {/if}
   <p><a href="{$clear_all_link}">{l s='Reset all filter' d='Shop.Theme.Actions'}</a></p>
+  -->
 </section>
