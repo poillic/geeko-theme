@@ -1240,6 +1240,16 @@ table {
         /* t as title */ }
       .gk__pdt__hdr__dsc {
         /* dsc as description */ }
+    .gk__pdt__dtls {
+      /* dtls as details */ }
+      .gk__pdt__dtls__nav {
+        /* nav as navigation */
+        display: flex; }
+        .gk__pdt__dtls__nav li a {
+          padding: 5px;
+          border: 1px solid #000000;
+          border-radius: 30px;
+          display: block; }
 
 .gk__flt {
   border-top: 2px solid #000000;
