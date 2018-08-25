@@ -1244,12 +1244,38 @@ table {
       /* dtls as details */ }
       .gk__pdt__dtls__nav {
         /* nav as navigation */
-        display: flex; }
-        .gk__pdt__dtls__nav li a {
-          padding: 5px;
-          border: 1px solid #000000;
-          border-radius: 30px;
-          display: block; }
+        border-bottom: 1px solid #e3e3e3; }
+        .gk__pdt__dtls__nav ul {
+          display: flex;
+          width: 90%;
+          justify-content: space-around;
+          margin: 0 auto;
+          padding: 20px 0; }
+          .gk__pdt__dtls__nav ul li a {
+            padding: 5px;
+            border-radius: 30px;
+            display: block; }
+            .gk__pdt__dtls__nav ul li a.active {
+              border: 1px solid #000000; }
+            .gk__pdt__dtls__nav ul li a:hover {
+              color: #FFFFFF;
+              background: #000000; }
+      .gk__pdt__dtls section h2 {
+        text-align: center; }
+      .gk__pdt__dtls__sctn--yellow {
+        background: #f7ec8d; }
+      .gk__pdt__dtls__crc ul {
+        width: 80%;
+        margin: 0 auto; }
+        .gk__pdt__dtls__crc ul li {
+          display: block;
+          padding: 20px 0;
+          border-bottom: 1px solid #e3e3e3; }
+          .gk__pdt__dtls__crc ul li p {
+            display: inline-block; }
+            .gk__pdt__dtls__crc ul li p.title {
+              font-weight: bold;
+              width: 25%; }
 
 .gk__flt {
   border-top: 2px solid #000000;
@@ -1430,6 +1456,8 @@ body {
   .gk__h1 {
     text-transform: uppercase;
     font-family: "Avenir Black", sans-serif; }
+  .gk__h2 {
+    text-transform: uppercase; }
   .gk__h3 {
     text-transform: uppercase; }
   .gk__btn--black {

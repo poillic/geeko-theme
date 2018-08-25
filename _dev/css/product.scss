@@ -19,13 +19,62 @@
 
 		&__dtls{ /* dtls as details */
 			&__nav{ /* nav as navigation */
-				display: flex;
-				& li{
-					& a {
-						padding: 5px;
-						border: 1px solid $black;
-						border-radius: 30px;
+				border-bottom: 1px solid $mercury;
+				& ul{
+					display: flex;
+					width: 90%;
+					justify-content: space-around;
+					margin: 0 auto;
+					padding: 20px 0;
+					& li{
+						& a {
+
+							padding: 5px;
+							border-radius: 30px;
+							display: block;
+							
+							&.active{
+								border: 1px solid $black;
+							}
+
+							&:hover{
+								color: $white;
+								background: $black;
+							}
+						}
+					}
+				}
+			}
+
+			& section {
+				& h2{
+					text-align: center;
+				}
+			}
+			
+			&__sctn{
+				&--yellow{
+					background: $sweetcorn;
+				}
+			}
+
+			&__crc{
+				& ul{
+					width: 80%;
+					margin: 0 auto;
+					& li {
 						display: block;
+						padding: 20px 0;
+						border-bottom: 1px solid $mercury;
+
+						& p {
+							display: inline-block;
+
+							&.title{
+								font-weight: bold;
+								width: 25%;
+							}
+						}
 					}
 				}
 			}

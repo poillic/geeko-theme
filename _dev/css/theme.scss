@@ -100,10 +100,15 @@ body{
 		font-family: "Avenir Black", sans-serif;
 	}
 
+	&__h2{
+		text-transform: uppercase;
+		
+	}
+
 	&__h3{
 		text-transform: uppercase;
 	}
-
+	
 	&__btn{
 		&--black{
 			color: $white;
