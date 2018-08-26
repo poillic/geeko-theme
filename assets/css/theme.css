@@ -1262,6 +1262,20 @@ table {
               background: #000000; }
       .gk__pdt__dtls section h2 {
         text-align: center; }
+      .gk__pdt__dtls section#presentation .gk__pdt__dtls__ctnt {
+        display: flex;
+        width: 80%;
+        margin: 0 auto;
+        justify-content: center; }
+        .gk__pdt__dtls section#presentation .gk__pdt__dtls__ctnt div {
+          width: 500px; }
+      .gk__pdt__dtls section#manettes .gk__pdt__dtls__bkg {
+        background-image: url("https://picsum.photos/2880/1140"); }
+      .gk__pdt__dtls section#manettes .gk__pdt__dtls__ctnt {
+        padding: 140px 0;
+        width: 80%;
+        margin: 0 auto;
+        color: #FFFFFF; }
       .gk__pdt__dtls__sctn--yellow {
         background: #f7ec8d; }
       .gk__pdt__dtls__crc ul {
@@ -1269,7 +1283,7 @@ table {
         margin: 0 auto; }
         .gk__pdt__dtls__crc ul li {
           display: block;
-          padding: 20px 0;
+          padding: 40px 0;
           border-bottom: 1px solid #e3e3e3; }
           .gk__pdt__dtls__crc ul li p {
             display: inline-block; }
