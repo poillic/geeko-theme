@@ -97,7 +97,7 @@ body{
 
 	&__h1{
 		text-transform: uppercase;
-		font-family: "Avenir Black", sans-serif;
+		font-family: "Avenir Black";
 	}
 
 	&__h2{
@@ -185,6 +185,11 @@ body{
 				justify-content: center;
 				display: flex;
 				flex-wrap: wrap;
+			}
+
+			& img {
+				width: 100%;
+				height: auto;
 			}
 
 			& > div:nth-child(2){

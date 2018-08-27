@@ -51,7 +51,7 @@ module.exports = [{
       test: /\.scss$/,
       loader: ExtractTextPlugin.extract(
           "style",
-          "css-loader?sourceMap!postcss!sass-loader?sourceMap"
+          "css-loader?sourceMap!postcss!resolve-url-loader!sass-loader?sourceMap"
       )
     }, {
       test: /\.styl$/,
@@ -73,7 +73,7 @@ module.exports = [{
       )
     }, {
       test: /.(png|woff(2)?|eot|ttf|svg|jpg)(\?[a-z0-9=\.]+)?$/,
-      loader: 'file-loader?name=../css/[hash].[ext]'
+      loader: 'resolve-url-loader?limit=100000'
     }]
   },
   externals: {

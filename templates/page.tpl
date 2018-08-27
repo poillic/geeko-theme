@@ -26,7 +26,7 @@
 
 {block name='content'}
 
-  <section id="main" style="border:3px solid pink;">
+  <section id="main">
     {block name='page_header_container'}
       <header class="page-header">
         {block name='page_header'}
