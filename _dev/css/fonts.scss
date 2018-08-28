@@ -7,13 +7,52 @@
 		font-family: "Avenir Roman", sans-serif;
 	}
 
-	&__txt-lg{
-		font-size: 20px;
-		line-height: 26px;
+	&__frm{ /* frm as from */
+		font-family: "Avenir Roman", sans-serif;
+		text-tranform: uppercase;
+		color: $abbey;
+		&:before{
+			content: "";
+			margin-bottom: 4px;
+			display: inline-block;
+			width: $gutter;
+			height: 1px;
+			border-bottom: 1px solid $abbey;
+		}
+	}
+
+	&__txt{
+		&--white{
+			color: $white;
+		}
+
+		&-md{
+			font-size: 18px;
+			line-height: 22px;
+		}
+
+		&-lg{
+			font-size: 26px;
+			line-height: 28px;
+		}
+
+		&-xl{
+			font-size: 36px;
+			line-height: 40px;
+		}
+
+		&-upc{
+			text-transform: uppercase;
+		}
 	}
 
 	&__title-xxl{
-		font-size: 36px;
-		line-height: 48px;
+		font-size: 50px;
+		line-height: 56px;
 	}
+}
+
+p.gk__centered{
+	width: 50%;
+	margin: 0 auto;
 }

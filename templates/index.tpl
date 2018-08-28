@@ -5,14 +5,14 @@
     {$HOOK_HOME nofilter}
     <main>
 		<section class="gk__pnl--sc gk__ctr-txt">
-			<h1 class="gk__h1 gk__title-xxl">Le meuble optimal pour les gamers</h1>
-			<h3 class="gk__h3 gk__mrg__t-10">fabriqué en france</h3>
+			<h1 class="gk__h1 gk__hm__ttl gk__title-xxl">Le meuble optimal pour les gamers</h1>
+			<h3 class="gk__h3 gk__mrg__t-10 gk__ar">fabriqué en france</h3>
 			<a href="" class="gk__btn--black gk__mrg__t-15">acheter</a>
 		</section>
 
 		<section  class="gk__pnl">
 			<div class="gk__pnl__ctnt">
-				<p class="gk__ctr-txt gk__ar gk__txt-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent finibus dolor in pretium molestie. Integer sed convallis ex, a semper mauris.</p>
+				<p class="gk__ctr-txt gk__ab gk__txt-lg gk__centered">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent finibus dolor in pretium molestie. Integer sed convallis ex, a semper mauris.</p>
 
 				<div class="gk__tgl gk__mrg__t-30" data-switch-toggle>
 					<span class="gk__tgl__btn"></span>
@@ -27,8 +27,9 @@
 					<div class="gk__flt-txt">
 						<img src="https://picsum.photos/682/300">
 						<div class="gk__flt-txt__ctnt--left">
-							<p>Le meuble optimal pour les gamers</p>
-							<span>A partir de 550€</span>
+							<p class="gk__txt-xl">Le meuble optimal & design pour les gamers</p>
+							<span class="gk__frm">A partir de 550€</span>
+							<a href="" class="gk__btn--black gk__mrg__t-15">en savoir plus</a>
 						</div>
 					</div>
 				</div>
@@ -36,7 +37,7 @@
 					<div class="gk__flt-txt">
 						<div><img src="https://picsum.photos/682/300"></div>
 						<div class="gk__flt-txt__ctnt">
-							<p>Que semper iter facit multos hospites abet sed paucos amicos.</p>
+							<p class="gk__txt-xl gk__txt--white" >Qui semper iter facit multos hospites habet sed paucos amicos.</p>
 							<a href="" class="gk__btn--yellow gk__mrg__t-15">En savoir plus</a>
 						</div>
 					</div>
@@ -53,7 +54,7 @@
 		</section>
 
 		<section class="gk__insta gk__ctr-txt">
-			<p>instagram</p>
+			<p class="gk__ar gk__txt-upc gk__txt-md">instagram</p>
 			<h2 class="gk__mrg__t-15">Suivez-nous sur @geeko</h2>
 			<a href="" class="gk__btn--black gk__mrg__t-15">suivez-nous</a>
 

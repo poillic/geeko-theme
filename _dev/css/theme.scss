@@ -29,12 +29,22 @@ body{
 	box-sizing: border-box;
 }
 
+.gk{
+	&__hm{
+		&__ttl{
+			width: 640px;
+			margin: 0 auto;
+			letter-spacing: 6px;
+		}
+	}
+}
+
 .gk{ /* gk as geeko */
 	&__pnl{ /* pnl as panel */
-		padding: 30px 10px;
+		padding: $md-gutter $gutter;
 		
 		&--sc{ /* sc as sweetcorn */
-			padding: 30px 0;
+			padding: $md-gutter 0;
 			background-color: $sweetcorn;
 		}
 
@@ -43,10 +53,10 @@ body{
 		}
 
 		&__ctnt{
-			padding: 0 15px;
+			padding: 0 $gutter;
 		}
 
-		& p {
+		& > p {
 			@include breakpoint("md"){
 				max-width: 500px;
 				margin: 0 auto;
@@ -59,13 +69,13 @@ body{
 	}
 
 	&__insta{
-		padding: 30px 0;
+		padding: $md-gutter 0;
 	}
 }
 
 .gk{ /* gk as geeko */
 	&__n-l{ /* n-l as nav link */
-		padding: 15px 0;
+		padding: $gutter 0;
 		display: block;
 
 		&.is--active{
@@ -115,10 +125,12 @@ body{
 			background-color: $black;
 			border: none;
 			border-radius: 30px;
-			padding: 10px 15px;
+			padding: 10px $gutter;
 			text-transform: uppercase;
 			display: inline-block;
 			font-family: "Avenir Black", sans-serif;
+			font-size: 12px;
+			letter-spacing: 2px;
 
 			&:after{
 				font-family: "Font Awesome 5 Free";
@@ -132,10 +144,12 @@ body{
 			color: $black;
 			background-color: $sweetcorn;
 			border-radius: 30px;
-			padding: 10px 15px;
+			padding: 10px $gutter;
 			text-transform: uppercase;
 			display: inline-block;
 			font-family: "Avenir Black", sans-serif;
+			font-size: 12px;
+			letter-spacing: 2px;
 
 			&:after{
 				font-family: "Font Awesome 5 Free";
@@ -177,7 +191,8 @@ body{
 
 .gk{
 	&__mosaic{
-		margin:  auto;
+		margin: 0 auto;
+		margin-top: $md-gutter;
 		& > div {
 			width: 100%;
 			font-size: 0;
@@ -194,7 +209,7 @@ body{
 
 			& > div:nth-child(2){
 				@include breakpoint("vlg"){
-					margin-left: 15px;
+					margin-left: $gutter;
 				}
 			}
 		}
@@ -223,9 +238,9 @@ body{
 		& li {
 
 			& a{
-				padding: 20px 0;
+				padding: $md-gutter 0;
 				@include breakpoint("md"){
-					padding: 0 20px;
+					padding: 0 $md-gutter;
 				}
 			}
 		}
