@@ -1,0 +1,27 @@
+.gk{
+	&__lgn{
+		font-family: "Avenir Roman";
+		width: 80%;
+		margin: 0 auto;
+
+		& label {
+			display: block;
+			& > span {
+				display: block;
+				font-size: 14px;
+				margin: 10px 0;
+			}
+
+			&.checkbox-field {
+				margin-top: $gutter;
+				& > span {
+					display: inline;
+				}
+			}
+
+		}
+		& .form-footer{
+			margin-top: $gutter;
+		}
+	}
+}
