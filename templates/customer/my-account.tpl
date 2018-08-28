@@ -7,7 +7,7 @@
 
 {block name='page_content_container'}
   <section id="content" class="page-content page-my-account">
-
+  <p style="color:red; font-size: 20px">my-account.tpl</p>
     <p>{l s='Welcome to your account. Here you can manage all of your personal information and orders.' d='Shop.Theme.Customeraccount'}</p>
 
     {block name="account_link_list"}
