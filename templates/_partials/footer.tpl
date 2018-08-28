@@ -22,5 +22,5 @@
 		<li><a class="gk__n-l" href=""><i class="fab fa-facebook"></i></a></li>
 		<li><a class="gk__n-l" href=""><i class="fab fa-instagram"></i></a></li>
 	</ul>
-	<div>@2018 <span>Geeko</span>. Tous Droits Réservés.
+	<div class="gk__cpr">@2018 <span>Geeko</span>. Tous Droits Réservés.</div>
 </footer>
