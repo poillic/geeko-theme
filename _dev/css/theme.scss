@@ -41,6 +41,14 @@ body{
 	}
 }
 
+.gk{
+	&__rgstr{
+		&__ttl{
+			text-align: center;
+		}
+	}
+}
+
 .gk{ /* gk as geeko */
 	&__pnl{ /* pnl as panel */
 		padding: $md-gutter $gutter;

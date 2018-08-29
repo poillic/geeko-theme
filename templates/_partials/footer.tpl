@@ -3,10 +3,12 @@
 	{block name='hook_footer_before'}
 	  {hook h='displayFooterBefore'}
 	{/block}
-
-	{block name='hook_footer'}
-	  {hook h='displayFooter'}
-	{/block}
+	
+	<ul class="gk__nav" >
+		{block name='hook_footer'}
+		  {hook h='displayFooter'}
+		{/block}
+	</ul>
 
 	{block name='hook_footer_after'}
 	  {hook h='displayFooterAfter'}
