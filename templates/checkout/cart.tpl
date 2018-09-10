@@ -4,7 +4,7 @@
 
   <section id="main">
     <h1>{l s='Shopping Cart' d='Shop.Theme.Checkout'}</h1>
-
+    
     {block name='cart_overview'}
       {include file='checkout/_partials/cart-detailed.tpl' cart=$cart}
     {/block}
